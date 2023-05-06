@@ -1,9 +1,8 @@
 {
   "name": "fabrate",
-  "version": "1.0.4",
-  "description": "",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "version": "1.1.1",
+  "description": "Enjoy the helpful information you need for applications, without the hastle of a subscription.",
+  "main": "index.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",

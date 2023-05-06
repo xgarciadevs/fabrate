@@ -1,35 +1,52 @@
-import { Dares } from '../dares';
-import { Jokes } from '../jokes';
-import { Names } from '../names';
-import { NHIE } from '../nhie';
-import { Roasts } from '../roasts';
-import { ShowerThoughts } from '../showerthoughts';
-import { Truths } from '../truths';
+import {
+  Dare,
+  Joke,
+  MovieQuote,
+  Name,
+  NeverHaveIEver,
+  PokemonName,
+  Roast,
+  ShowerThought,
+  SuperheroName,
+  Truth,
+} from '../index';
 
 test('Dares', () => {
-  expect(Dares());
+  expect(Dare());
 });
 
 test('Jokes', () => {
-  expect(Jokes());
+  expect(Joke());
 });
 
 test('Names', () => {
-  expect(Names('all'));
+  expect(Name('all'));
 });
 
-test('NHIE', () => {
-  expect(NHIE());
+test('NeverHaveIEver', () => {
+  expect(NeverHaveIEver());
 });
 
 test('Roasts', () => {
-  expect(Roasts());
+  expect(Roast());
 });
 
-test('Shower Thought', () => {
-  expect(ShowerThoughts());
+test('ShowerThoughts', () => {
+  expect(ShowerThought());
 });
 
 test('Truths', () => {
-  expect(Truths());
+  expect(Truth());
+});
+
+test('MovieQuote', () => {
+  expect(MovieQuote());
+});
+
+test('PokemonName', () => {
+  expect(PokemonName());
+});
+
+test('SuperheroName', () => {
+  expect(SuperheroName());
 });
