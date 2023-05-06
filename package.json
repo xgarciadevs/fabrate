@@ -1,5 +1,5 @@
 {
-  "name": "fabrate",
+  "name": "@xdg6227/fabrate",
   "version": "1.1.1",
   "description": "Enjoy the helpful information you need for applications, without the hastle of a subscription.",
   "main": "index.js",
@@ -17,6 +17,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xdg6227/fabrate.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/xdg6227"
   },
   "keywords": [
     "fabrate",
