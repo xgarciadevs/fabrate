@@ -18,9 +18,6 @@
     "type": "git",
     "url": "git+https://github.com/xdg6227/fabrate.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/xdg6227"
-  },
   "keywords": [
     "fabrate",
     "npm",
