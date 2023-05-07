@@ -1,14 +1,17 @@
 import {
+  Compliment,
   Dare,
   Joke,
   MovieQuote,
   Name,
   NeverHaveIEver,
+  NeverHaveIEverNSFW,
   PokemonName,
   Roast,
   ShowerThought,
   SuperheroName,
   Truth,
+  UselessWebsite,
 } from '../index';
 
 test('Dares', () => {
@@ -49,4 +52,16 @@ test('PokemonName', () => {
 
 test('SuperheroName', () => {
   expect(SuperheroName());
+});
+
+test('UselessWebsite', () => {
+  expect(UselessWebsite());
+});
+
+test('Compliment', () => {
+  expect(Compliment());
+});
+
+test('NeverHaveIEverNSFW', () => {
+  expect(NeverHaveIEverNSFW());
 });

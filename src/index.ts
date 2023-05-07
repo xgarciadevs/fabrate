@@ -1,8 +1,10 @@
 /**
  * Dares
- * @description Get a random dare sent back after function has been ran.
+ * @description Have a funny dare against whoever deserves it.
  * @nsfw This function does not contain Not-Safe-For-Work content.
- * @updated Fri May 5, 2023
+ * @created Fri May 5, 2023
+ *
+ * @returns Dare
  */
 export function Dare() {
   const dare = dares[Math.floor(Math.random() * dares.length)];
@@ -13,7 +15,9 @@ export function Dare() {
  * FabrateError
  * @description No description.
  * @nsfw This function does not contain Not-Safe-For-Work content.
- * @updated Fri May 5, 2023
+ * @created Fri May 5, 2023
+ *
+ * @returns Information about Error
  */
 export function FabrateError() {
   return '[FabrateError] This does not function quite yet.';
@@ -23,7 +27,9 @@ export function FabrateError() {
  * FabrateTypeError
  * @description No description.
  * @nsfw This function does not contain Not-Safe-For-Work content.
- * @updated Fri May 5, 2023
+ * @created Fri May 5, 2023
+ *
+ * @returns Information about Type Error
  */
 export function FabrateTypeError() {
   return '[FabrateTypeError] This does not function quite yet.';
@@ -33,7 +39,10 @@ export function FabrateTypeError() {
  * FabrateErrorCode
  * @description No description.
  * @nsfw This function does not contain Not-Safe-For-Work content.
- * @updated Fri May 5, 2023
+ * @created Fri May 5, 2023
+ *
+ * @param code The error code within the package
+ * @returns Information about error code
  */
 export function FabrateErrorCode(code: number) {
   return '[FabrateErrorCode] This does not function quite yet.';
@@ -41,9 +50,11 @@ export function FabrateErrorCode(code: number) {
 
 /**
  * Jokes
- * @description Get a random joke sent back after function has been ran.
+ * @description Now you can seem funny in front of your "friend".
  * @nsfw This function does not contain Not-Safe-For-Work content.
- * @updated Fri May 5, 2023
+ * @created Fri May 5, 2023
+ *
+ * @returns Joke
  */
 export function Joke() {
   const joke = jokes[Math.floor(Math.random() * jokes.length)];
@@ -52,9 +63,12 @@ export function Joke() {
 
 /**
  * Names
- * @description Get a random dare sent back after function has been ran.
+ * @description I don't know why you need name but these are here for you.
  * @nsfw This function does not contain Not-Safe-For-Work content.
- * @updated Fri May 5, 2023
+ * @created Fri May 5, 2023
+ *
+ * @param gender [male boy man] [female girl woman] [all]
+ * @returns Name of Gender
  */
 export function Name(gender: string) {
   if (gender === 'male' || gender === 'boy' || gender === 'man') {
@@ -80,9 +94,11 @@ export function Name(gender: string) {
 
 /**
  * Never Have I Ever
- * @description Get a random Never Have I Ever statement sent back after function has been ran.
+ * @description Never Have I Ever questions that you probably have done.
  * @nsfw This function does not contain Not-Safe-For-Work content.
- * @updated Fri May 5, 2023
+ * @created Fri May 5, 2023
+ *
+ * @returns Never Have I Ever
  */
 export function NeverHaveIEver() {
   const nhie = nhies[Math.floor(Math.random() * nhies.length)];
@@ -90,10 +106,25 @@ export function NeverHaveIEver() {
 }
 
 /**
- * Roasts
- * @description Get a random roast sent back after function has been ran.
+ * Never Have I Ever NSFW
+ * @description Never Have I Ever questions for any adult themes.
  * @nsfw This function does contain Not-Safe-For-Work content.
- * @updated Fri May 5, 2023
+ * @created Fri May 6, 2023
+ *
+ * @returns Never Have I Ever NSFW
+ */
+export function NeverHaveIEverNSFW() {
+  const nhienswd = nhiesNFSW[Math.floor(Math.random() * nhiesNFSW.length)];
+  return nhienswd;
+}
+
+/**
+ * Roasts
+ * @description If you can't come up with a normal roast for your bully, here you go.
+ * @nsfw This function does contain Not-Safe-For-Work content.
+ * @created Fri May 5, 2023
+ *
+ * @returns Roast
  */
 export function Roast() {
   const roast = roasts[Math.floor(Math.random() * roasts.length)];
@@ -102,9 +133,11 @@ export function Roast() {
 
 /**
  * Shower Thoughts
- * @description Get a random shower thought sent back after function has been ran.
+ * @description Having trouble thinking in the shower or anywhere, use one of these to think.
  * @nsfw This function does contain Not-Safe-For-Work content.
- * @updated Fri May 5, 2023
+ * @created Fri May 5, 2023
+ *
+ * @returns Shower Thought
  */
 export function ShowerThought() {
   const thought = showerThoughts[Math.floor(Math.random() * showerThoughts.length)];
@@ -113,9 +146,11 @@ export function ShowerThought() {
 
 /**
  * Truths
- * @description Get a random truth sent back after function has been ran.
+ * @description Usually for Truth or Dare games, basic for any need.
  * @nsfw This function does not contain Not-Safe-For-Work content.
- * @updated Fri May 5, 2023
+ * @created Fri May 5, 2023
+ *
+ * @returns Truth
  */
 export function Truth() {
   const truth = truths[Math.floor(Math.random() * truths.length)];
@@ -124,9 +159,11 @@ export function Truth() {
 
 /**
  * Movie Quotes
- * @description Get a random movie quote sent back after function has been ran.
+ * @description Wanna feel like your trendy, use one of these movie quotes.
  * @nsfw This function does not contain Not-Safe-For-Work content.
- * @updated Fri May 6, 2023
+ * @created Fri May 6, 2023
+ *
+ * @returns Movie Quote
  */
 export function MovieQuote() {
   const movieQuote = movieQuotes[Math.floor(Math.random() * movieQuotes.length)];
@@ -135,9 +172,11 @@ export function MovieQuote() {
 
 /**
  * Pokemon Names
- * @description Get a random pokemon name sent back after function has been ran.
+ * @description Have a new Pokemon friend, this only gives the name though so.
  * @nsfw This function does not contain Not-Safe-For-Work content.
- * @updated Fri May 6, 2023
+ * @created Fri May 6, 2023
+ *
+ * @returns Pokemon Name
  */
 export function PokemonName() {
   const pokemon = pokemonNames[Math.floor(Math.random() * pokemonNames.length)];
@@ -146,14 +185,405 @@ export function PokemonName() {
 
 /**
  * Superhero Names
- * @description Get a random superhero name sent back after function has been ran.
+ * @description Get a superhero name, you probably don't know half of them but still.
  * @nsfw This function does not contain Not-Safe-For-Work content.
- * @updated Fri May 6, 2023
+ * @created Fri May 6, 2023
+ *
+ * @returns Superhero Name
  */
 export function SuperheroName() {
   const superhero = superheroNames[Math.floor(Math.random() * superheroNames.length)];
   return superhero;
 }
+
+/**
+ * Useless Websites
+ * @description Find a random website you can spend the next couple minutes on. Then repeat.
+ * @nsfw This function does not contain Not-Safe-For-Work content.
+ * @created Fri May 6, 2023
+ *
+ * @returns Website URI
+ */
+export function UselessWebsite() {
+  const website = uselessWebsites[Math.floor(Math.random() * uselessWebsites.length)];
+  return website;
+}
+
+/**
+ * Compliments
+ * @description Give a random compliment to someone close or far.
+ * @nsfw This function does not contain Not-Safe-For-Work content.
+ * @created Fri May 6, 2023
+ *
+ * @returns Compliment
+ */
+export function Compliment() {
+  const compliment = compliments[Math.floor(Math.random() * compliments.length)];
+  return compliment;
+}
+
+const compliments = [
+  'Hey there sexy!',
+  'I hope your day is as nice as your face!',
+  'Have you been working out?',
+  "I'm lucky to be your mirror!",
+  'The Force is strong with you',
+  'If I could high five you... I would!',
+  "On a scale from 1 to 10, you're an 15!",
+  "Being awesome is hard, but you'll manage",
+  'I could just hang here all day!',
+  'I need some time to reflect...',
+  'I see a lot of myself in you',
+  "Damn. You're looking good!",
+  'Yes, you are the fairest of them all',
+  'May the Force be with you',
+  "There's no place like home",
+  'There is no spoon...',
+  'Temet Nosce',
+  'Welcome to the desert of the real',
+  'If you focus on what you’ve left behind, you will never be able to see what lies ahead',
+  'I carried a watermelon',
+  'You gotta hold the frame',
+  'Never underestimate the power of denial',
+  'Strangers all wanna sit next to you on the bus',
+  'Coworkers fantasizes about getting stuck in the elevator with you',
+  'At least two friends are going to name their child and/or goldfish after you',
+  'You are freakishly good at thumb wars',
+  'The FBI tapped your phone just to hear the sound of your voice',
+  'You never forget to fill the ice-cube tray',
+  'People enjoy you accidentally touching their butt while putting on your seat-belt',
+  'I’d give you the last piece of my gum even if I’d just ate garlic',
+  'You could make up a weird religion or diet and everyone would follow it',
+  'Your principal would call you to the office just to look cool',
+  'Your handshake conveys intelligence, confidence and minor claminess',
+  'Cops admire your ability to stay a perfect 3-5 miles above the speed limit',
+  'You rarely have to go to the bathroom when you fly in the window seat',
+  'Cockroaches, mice and other pests avoid your place out of respect',
+  'Callers are intimidated by how funny your voicemail greeting is',
+  'Kids think you are the “cool old person”',
+  'People always think your jeggings are regular jeans',
+  '80% of motorcycle gangs think you’d be a delightful sidecar',
+  'Everyone at the laundromat thinks you have the cutest underwear',
+  'People behind you at movies think you are the perfect height',
+  'Your parents argue over which one of them you look like',
+  'Your smile is contagious',
+  'You look great today',
+  "You're a smart cookie",
+  'I bet you make babies smile',
+  'You have impeccable manners',
+  'I like your style',
+  'You have the best laugh',
+  'I appreciate you',
+  'You are the most perfect you there is',
+  'Your perspective is refreshing',
+  "You're an awesome friend",
+  'You light up the room',
+  'You deserve a hug right now',
+  'You should be proud of yourself',
+  "You're more helpful than you realize",
+  'You have a great sense of humor',
+  "You've got all the right moves!",
+  "You're all that and a super-size bag of chips",
+  "You're even more beautiful on the inside than you are on the outside",
+  'If cartoon bluebirds were real, a bunch of them would be sitting on your shoulders singing right now',
+  'You are making a difference',
+  "You're like sunshine on a rainy day",
+  'You bring out the best in other people',
+  'Your ability to recall random factoids at just the right time is impressive',
+  "You're a great listener",
+  'How is it that you always look great, even in sweatpants?',
+  'Everything would be better if more people were like you!',
+  'I bet you sweat glitter',
+  'You were cool way before hipsters were cool',
+  'That color is perfect on you',
+  'Hanging out with you is always a blast',
+  'You smell really good',
+  'Being around you makes everything better!',
+  'When you say, "I meant to do that," I totally believe you',
+  "Colors seem brighter when you're around",
+  "You're wonderful",
+  'You have cute elbows. For reals!',
+  'Jokes are funnier when you tell them',
+  "You're better than a triple-scoop ice cream cone. With sprinkles",
+  'Your bellybutton is kind of adorable',
+  'Your hair looks stunning',
+  "You're one of a kind!",
+  "You're inspiring",
+  'You should be thanked more often. So thank you!!',
+  'You have the best ideas',
+  'You always know how to find that silver lining',
+  'Everyone gets knocked down sometimes, but you always get back up and keep going',
+  "You're a candle in the darkness",
+  "You're a great example to others",
+  'Being around you is like being on a happy little vacation',
+  'You always know just what to say',
+  "You're always learning new things and trying to better yourself, which is awesome",
+  'If someone based an Internet meme on you, it would have impeccable grammar',
+  'You could survive a Zombie apocalypse',
+  "You're more fun than bubble wrap",
+  'When you make a mistake, you fix it',
+  'Who raised you? They deserve a medal for a job well done',
+  "You're great at figuring stuff out",
+  'Your voice is magnificent',
+  'The people you love are lucky to have you in their lives',
+  "You're like a breath of fresh air",
+  "You're gorgeous -- and that's the least interesting thing about you, too",
+  "You're so thoughtful",
+  'Your creative potential seems limitless',
+  'Your name suits you to a T',
+  "You're irresistible when you blush",
+  'Actions speak louder than words, and yours tell an incredible story',
+  'Somehow you make time stop and fly at the same time',
+  'When you make up your mind about something, nothing stands in your way',
+  'You seem to really know who you are',
+  'Any team would be lucky to have you on it',
+  'In high school I bet you were voted "most likely to keep being awesome."',
+  'Babies and small animals probably love you',
+  "You're someone's reason to smile",
+  "You're even better than a unicorn, because you're real",
+  'How do you keep being so funny and making everyone laugh?',
+  'You have a good head on your shoulders',
+  'Has anyone ever told you that you have great posture?',
+  'The way you treasure your loved ones is incredible',
+  "You're really something special",
+  "You're a gift to those around you",
+  "You're so smart! Why haven't I thought of that before?",
+  'You look great in that outfit',
+  'You look younger than your age',
+  'I like the way you smile',
+  "You're so funny!",
+  'Thank you for being so thoughtful',
+  'Did you lose some weight? You look healthy',
+  'I like you because you are a great listener',
+  'You inspired me to become a better person',
+  "I couldn't have finished this project without your help",
+  'I like your sense of style',
+  'Your hair looks amazing',
+  'You smell good today',
+  'You rock that shirt!',
+  'Good job!',
+  'I like your shoes',
+  'I like the way you designed my website',
+  'You have a lovely voice',
+  'Your sweater looks nice. Where did you buy that?',
+  'You cracked me up with that joke',
+  "I love all of the photos you've taken",
+  'You are a great husband',
+  "That's so awesome!",
+  'Have been working out lately?',
+  'How do you style your hair like that?',
+  'I like your pants',
+  'I will recommend your service to my friends',
+  'You must be the life of the party',
+  'You look even better without makeup',
+  'You have a great taste in clothes',
+  'Take a break! You deserve a vacation',
+  'How do make your skin to look flawless and radiant?',
+  'Nice nails!',
+  'You are one of a kind',
+  'You look cool in those boots',
+  'Keep up the good work!',
+  'You nailed it!',
+  'Those shoes were a great call. ',
+  '9/10 dentists agree, you are the BEST',
+  "Today's outfit = Thumbs up",
+  'Your hair looks great today. It also looked really good two days ago',
+  'You could be an astronaut if you wanted. NASA told me so',
+  'Your dental hygiene is impeccable.  ',
+  '8 out of 10 co-workers agree, your desk is the cleanest. ',
+  "You'd be the last one standing in a horror movie",
+  "You're funny. Like, LOL style",
+  'You have very smooth hair',
+  'You deserve a promotion',
+  'I like your style',
+  'That looks nice on you',
+  'You have perfect bone structure',
+  'I like your socks',
+  'Your smile is breath taking',
+  'You make my data circuits skip a beat',
+  'You are the gravy to my mashed potatoes',
+  "You're cooler than Pirates and Ninjas combined",
+  'I like your pants',
+  'You could probably lead a rebellion',
+  'Your skin is radiant',
+  'You could survive a zombie apocalypse',
+  "You're so rad",
+  "You're more fun than a barrel of monkeys",
+  "You're nicer than a day on the beach",
+  'Your glass is the fullest',
+  'You look so perfect',
+  "You're more fun than bubble wrap",
+  "You're the bee's knees",
+  "You definitely know the difference between your and you're",
+  'Yum!, I dig you',
+  'You got the moves like Jagger',
+  'I would volunteer to take your place in the Hunger Games',
+  'You have such nice eyes',
+  "You're awesome",
+  "You're the best",
+  "You're fantastic",
+  "You're really flipping smart",
+  'You look awesome today, seriously',
+  'Good morning, sunshine!',
+  'Who needs coffee when you have your smile?',
+  "Go get 'em, Tiger!",
+  'Take on the day you beautiful land mermaid you!',
+  'I love the smell of napalm in the morning',
+  'You are early today',
+  'Hitting your stride!',
+  'You are making a difference!',
+  "You're more fun than bubble wrap!",
+  'You made someone smile today, I know it',
+  'You are making a difference',
+  'The day was better for your efforts',
+  'See you tomorrow!',
+  'Sleep tight',
+  'Snowball battle!',
+  'Today is a sunny day',
+  "It's a beautiful day",
+  'The sun is shining today!',
+  "It's such a beautiful day",
+  "It's gorgeous outside, go play!",
+  "It's cloudy out there, but no meatballs",
+  "It may be cloudy, but it's still nice out!",
+  'The sun is hiding right now',
+  'Take your umbrella with you',
+  "It's wet out there, drive safe!",
+  "It's rainy outside, but you brighten my day",
+  'Weather forecast for tonight: dark',
+  "It's a stormy night, don't be scared",
+];
+
+const nhiesNFSW = [
+  'Never have I ever hid a hickey with clothing',
+  'Never have I ever played strip poker',
+  'Never have I ever flirted with a teacher',
+  'Never have I ever sent a naughty photo to my spouse',
+  'Never have I ever waited for you in the shower',
+  'Never have I ever used a safe word',
+  'Never have I ever snuck a peek from the other room',
+  'Never have I ever screamed your name',
+  'Never have I ever licked food off someone',
+  'Never have I ever snuck a boy/girl into the house',
+  'Never have I ever made out on an airplane',
+  'Never have I ever gone commando',
+  'Never have I ever peeked at you while you were sleeping',
+  'Never have I ever taken secret photos of you',
+  'Never have I ever fantasized about you',
+  'Never have I ever faked an orgasm',
+  'Never have I ever had a dream about you',
+  'Never have I ever stayed awake with you on my mind',
+  'Never have I ever done it under the stars',
+  'Never have I ever dreamed you would ravish me in an odd place',
+  'Never have I ever wanted to take a bath together',
+  'Never have I ever fantasized about handcuffs',
+  'Never have I ever had a sex dream about you',
+  'Never have I ever used edible body paints',
+  'Never have I ever made out in a public place',
+  'Never have I ever sat nude on leather',
+  'Never have I ever been the big spoon',
+  'Never have I ever played sexy games',
+  'Never have I ever bought the other lingerie',
+  'Never have I ever fallen asleep while doing it',
+  'Never have I ever made a sex tape',
+  'Never have I ever skipped foreplay',
+  "Never have I ever kept someone's worn piece of clothing just to smell them",
+  'Never have I ever taken a risque picture',
+  'Never have I ever participated in a lap dance',
+  'Never have I ever had a one night stand',
+];
+
+const uselessWebsites = [
+  'http://heeeeeeeey.com/',
+  'http://thatsthefinger.com/',
+  'http://cant-not-tweet-this.com/',
+  'http://eelslap.com/',
+  'http://www.staggeringbeauty.com/',
+  'http://burymewithmymoney.com/',
+  'http://www.fallingfalling.com/',
+  'http://ducksarethebest.com/',
+  'http://www.trypap.com/',
+  'http://www.republiquedesmangues.fr/',
+  'http://www.movenowthinklater.com/',
+  'http://www.partridgegetslucky.com/',
+  'http://www.rrrgggbbb.com/',
+  'http://beesbeesbees.com/',
+  'http://www.sanger.dk/',
+  'http://www.koalastothemax.com/',
+  'http://www.everydayim.com/',
+  'http://www.leduchamp.com/',
+  'http://grandpanoclothes.com/',
+  'http://www.haneke.net/',
+  'http://instantostrich.com/',
+  'http://r33b.net/',
+  'http://randomcolour.com/',
+  'http://cat-bounce.com/',
+  'http://cachemonet.com/',
+  'http://www.sadforjapan.com/',
+  'http://www.taghua.com/',
+  'http://chrismckenzie.com/',
+  'http://hasthelargehadroncolliderdestroyedtheworldyet.com/',
+  'http://ninjaflex.com/',
+  'http://iloveyoulikeafatladylovesapples.com/',
+  'http://ihasabucket.com/',
+  'http://corndogoncorndog.com/',
+  'http://giantbatfarts.com/',
+  'http://www.ringingtelephone.com/',
+  'http://www.pointerpointer.com/',
+  'http://www.pleasedonate.biz/',
+  'http://imaninja.com/',
+  'http://willthefuturebeaweso.me/',
+  'http://salmonofcapistrano.com/',
+  'http://www.ismycomputeron.com/',
+  'http://www.ooooiiii.com/',
+  'http://www.wwwdotcom.com/',
+  'http://www.nullingthevoid.com/',
+  'http://www.muchbetterthanthis.com/',
+  'http://www.ouaismaisbon.ch/',
+  'http://iamawesome.com/',
+  'http://www.pleaselike.com/',
+  'http://crouton.net/',
+  'http://corgiorgy.com/',
+  'http://www.electricboogiewoogie.com/',
+  'http://www.nelson-haha.com/',
+  'http://www.wutdafuk.com/',
+  'http://unicodesnowmanforyou.com/',
+  'http://tencents.info/',
+  'http://intotime.com/',
+  'http://leekspin.com/',
+  'http://minecraftstal.com/',
+  'http://www.riddlydiddly.com/',
+  'http://www.patience-is-a-virtue.org/',
+  'http://whitetrash.nl/',
+  'http://www.theendofreason.com/',
+  'http://zombo.com',
+  'http://secretsfornicotine.com/',
+  'http://pixelsfighting.com/',
+  'http://crapo.la/',
+  'http://baconsizzling.com/',
+  'http://isitwhite.com/',
+  'http://noot.space/',
+  'http://tomsdog.com/',
+  'http://goat.com/',
+  'https://www.dialupsound.com/',
+  'http://computerpowertest.com/',
+  'http://www.eeyup.com/',
+  'http://www.nevernowhere.com/',
+  'http://make-everything-ok.com/',
+  'http://thenicestplaceontheinter.net/',
+  'http://www.nyan.cat/',
+  'http://zombo.com/',
+  'http://gprime.net/game.php/dodgethedot',
+  'http://blank.org/',
+  'http://www.thedancinglion.com/',
+  'http://touchpianist.com/',
+  'http://www.whatsmystarbucksname.com/',
+  'http://time.tetrasign.com/emojiclock/',
+  'http://2015.tetrasign.com/',
+  'http://www.youcanseethemilkyway.com/',
+  'http://kolor.moro.es/',
+  'http://foaas.com/',
+];
 
 const superheroNames = [
   '3-D Man',
@@ -4622,6 +5052,7 @@ const truths = [
   'Who is most important to you?',
   'Have you ever whacked off to an animal?',
 ];
+
 const femaleNames = [
   'Olivia',
   'Emma',
